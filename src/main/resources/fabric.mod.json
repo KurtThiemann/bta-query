@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "btaquery",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "BTA Query",
+  "description": "Query protocol support for Better than Adventure servers",
   "authors": [
-    "Turnip Labs"
+    "Kurt Thiemann"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"KurtThiemann.btaquery.BtaQuery"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"KurtThiemann.btaquery.BtaQuery"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"KurtThiemann.btaquery.BtaQuery"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"KurtThiemann.btaquery.BtaQuery"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"btaquery.mixins.json"
   ],
 
   "depends": {
